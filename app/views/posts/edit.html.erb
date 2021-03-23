@@ -1,6 +1,9 @@
 <%= form_for(@post) do |f| %>
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
-
+<br>
+<label>Description:</label>
+<br>
+<input type="text" value="malicious description" name="post[description]" id="post_description">
   <%= f.submit %>
 <% end %>
