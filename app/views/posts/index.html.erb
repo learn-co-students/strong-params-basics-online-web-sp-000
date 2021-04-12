@@ -1,3 +1,7 @@
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div>
+    <%= post.title %>
+    <button id='<%=post.id%>'>Say Hi</button>
+  </div>
 <% end %>
+
